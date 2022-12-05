@@ -70,6 +70,9 @@ body {
   font-family: fontello;
 }
 
+.member a {
+  text-transform: uppercase;
+}
 /* 비주얼 */
 .visual {
   background: orange;
