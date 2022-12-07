@@ -99,7 +99,7 @@ body {
 
 /* 메인 메뉴 */
 .navigation {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .menu {
@@ -151,10 +151,10 @@ body {
 }
 
 .sub-menu {
-  background-color: pink;
   position: absolute;
   top: 47px;
   display: none;
+  padding: 4px 0;
 }
 
 .menu-html,
@@ -176,7 +176,6 @@ body {
 
 .sub-menu li {
   display: inline-block;
-  background-color: gold;
 }
 
 .sub-menu a::before {
@@ -201,11 +200,45 @@ body {
   content: "\e801";
 }
 
-/* 비주얼 */
-.visual {
-  background: orange;
-  height: 10vh;
+.sub-menu a {
+  display: inline-block;
+  padding: 6px 0;
 }
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+  color: #f00;
+}
+
+/* 비주얼 */
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    transform: translate(400px, 75px);
+  }
+}
+
+.visual {
+  background: pink;
+  height: 120px;
+  position: relative;
+}
+
+.visual-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: coral;
+  animation-name: moveEffect;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
 /* 메인 */
 .main {
   background: lightgreen;
