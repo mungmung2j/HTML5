@@ -3,6 +3,7 @@
 
 /* 숨김 콘텐츠 */
 .a11y-hidden {
+  background-color: aqua;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -131,6 +132,15 @@ body {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
+.is-active .menu-button{
+  color: yellow;
+}
+.is-active .menu-button::after{
+  content:"";
+  background-color: aqua;
+  display:block;
+  border-top:2px solid black;
+} 
 .sub-menu {
   background-color: pink;
   position: absolute;
