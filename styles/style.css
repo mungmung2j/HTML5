@@ -360,21 +360,45 @@ body {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   padding: 4px 10px;
-  display:flex;
-  flex-flow:row nowrap;
-  justify-content: space-between;
+}
+.sign li {
+  display: inline-block;
 }
 
-.sign a{
-  display:block;
-  padding:6px 0;
+.sign li:first-child {
+  margin-right: 16px;
+}
+
+.sign a {
+  display: inline-block;
+  padding: 6px 0;
   letter-spacing: -1px;
 }
 
-.sign a::before{
-  content:"\e804";
-  font-family:fontello;
-  margin-right:8px;
+.sign a::before {
+  color: orangered;
+}
+/* 유효성 검사 배너 */
+.validation-list{
+  margin-top:25px;
+}
+.validation-list li{
+  margin-top:10px;
+}
+
+.validation-list a{
+  display:block;
+  background: url(images/validation_icon.png)no-repeat 25px 50%, #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding:8px 15px 8px 45px;
+  border-radius:30px;
+  border: 1px solid #aaa;
+
+}
+
+
+.validation-list a:hover,
+.validation-list a:focus{
+  color:#f00;
 }
 
 /* 슬로건 */
